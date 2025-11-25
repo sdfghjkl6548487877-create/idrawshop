@@ -1,0 +1,157 @@
+# idrawshop
+shop
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Sneaker Store</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: "Inter", sans-serif;
+            background: #f5f5f5;
+            color: #222;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px 40px;
+            background: #fff;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .logo {
+            font-weight: 700;
+            font-size: 22px;
+        }
+
+        nav a {
+            margin-left: 20px;
+            text-decoration: none;
+            color: #444;
+            font-weight: 500;
+        }
+
+        nav a:hover {
+            color: #000;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 130px 20px;
+            background: url("https://via.placeholder.com/1600x600") center/cover;
+            color: #fff;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 25px;
+            background: #111;
+            color: #fff;
+            border-radius: 6px;
+            text-decoration: none;
+            margin-top: 10px;
+        }
+
+        .page-title {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 28px;
+        }
+
+        .product-grid {
+            padding: 40px;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+            gap: 30px;
+        }
+
+        .product-card {
+            background: #fff;
+            padding: 20px;
+            border-radius: 12px;
+            text-decoration: none;
+            color: #000;
+            transition: 0.2s;
+        }
+
+        .product-card img {
+            width: 100%;
+            border-radius: 12px;
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+            background: #fff;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">SneakerStore</div>
+    <nav>
+        <a href="#hero">Главная</a>
+        <a href="#catalog">Каталог</a>
+        <a href="#contact">Контакты</a>
+    </nav>
+</header>
+
+<section class="hero" id="hero">
+    <h1>Лучшие кроссовки — в одном месте</h1>
+    <p>Современные модели, эксклюзивные релизы, стиль на каждый день.</p>
+    <a class="btn" href="#catalog">Перейти в каталог</a>
+</section>
+
+<h2 class="page-title" id="catalog">Каталог</h2>
+
+<section class="product-grid">
+
+    <div class="product-card">
+        <img src="https://via.placeholder.com/400" alt="Nike Dunk Low">
+        <h3>Nike Dunk Low</h3>
+        <p>Цена: 12 990 ₽</p>
+    </div>
+
+    <div class="product-card">
+        <img src="https://via.placeholder.com/400" alt="Nike AF1">
+        <h3>Nike Air Force 1</h3>
+        <p>Цена: 11 490 ₽</p>
+    </div>
+
+    <div class="product-card">
+        <img src="https://via.placeholder.com/400" alt="Jordan 1 Retro">
+        <h3>Jordan 1 Retro</h3>
+        <p>Цена: 18 990 ₽</p>
+    </div>
+
+</section>
+
+<section id="contact" style="padding:40px;text-align:center;">
+    <h2>Контакты</h2>
+    <p>Напишите нам: sneakerstore@mail.com</p>
+</section>
+
+<footer>
+    <p>© 2025 SneakerStore</p>
+</footer>
+
+<script>
+    console.log("SneakerStore website loaded");
+</script>
+
+</body>
+</html>
